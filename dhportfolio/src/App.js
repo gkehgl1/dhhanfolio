@@ -1,22 +1,22 @@
 import './App.css';
+import './bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import Layout from './Layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-      <body>
-        <div>
-          <section>
-            <h2>안녕하세요</h2>
-          </section>
+    <Layout>
+      <Container style={{minHeight:'75vh', display: 'flex'}}>
+        <div id="div1">
+          <img style={{width:'100%'}} src={require("./main.jpg")} />;
         </div>
-        
-      </body>
-    </div>
-    
+        <div id="div2">
+          <h1>dddd</h1>
+        </div>
+      </Container>
+    </Layout>
   );
 }
 
 export default App;
+ 
